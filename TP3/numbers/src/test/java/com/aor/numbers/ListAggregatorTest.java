@@ -2,6 +2,7 @@ package com.aor.numbers;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.mockito.Mockito;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -48,18 +49,26 @@ public class ListAggregatorTest {
 
     @Test
     public void distinct() {
-        class StubDeduplicator implements IListDeduplicator {
-            public List<Integer> deduplicate(IListSorter listSorter) {
-                List<Integer> dedups = new ArrayList<>();
-                dedups.add(1);
-                dedups.add(2);
-                dedups.add(4);
-                return dedups;
-            }
-        }
+//        class StubDeduplicator implements IListDeduplicator {
+//            public List<Integer> deduplicate(IListSorter listSorter) {
+//                List<Integer> dedups = new ArrayList<>();
+//                dedups.add(1);
+//                dedups.add(2);
+//                dedups.add(4);
+//                return dedups;
+//            }
+//        }
+
+        IListDeduplicator deduplicator = Mockito.mock(IListDeduplicator.class);
+        List<Integer> dedups = new ArrayList<>();
+        dedups.add(1);
+        dedups.add(2);
+        dedups.add(4);
+        Mockito.when(deduplicator.deduplicate(Mockito.any(IListSorter.class))).thenReturn(dedups);
+
         ListAggregator aggregator = new ListAggregator(list);
 
-        int distinct = aggregator.distinct(new StubDeduplicator(), new ListSorter(list));
+        int distinct = aggregator.distinct(deduplicator, new ListSorter(list));
 
         assertEquals(3, distinct);
     }
