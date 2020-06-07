@@ -24,7 +24,11 @@
       <replace>UK</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
   <component name="ProjectId" id="1crPgg1yl9nKsDrLKqsJTYN57mW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -162,7 +166,7 @@
       <option name="presentableId" value="Default" />
       <updated>1553507421844</updated>
       <workItem from="1591283852499" duration="2766000" />
-      <workItem from="1591546585619" duration="3700000" />
+      <workItem from="1591546585619" duration="4215000" />
     </task>
     <servers />
   </component>
@@ -170,30 +174,30 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="768" y="271" width="553" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1591552108980">
+    <state x="768" y="271" width="553" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1591552170889">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="768" y="271" width="553" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1591552108980" />
+    <state x="768" y="271" width="553" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1591552170889" />
     <state x="602" y="27" width="706" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1591284022983">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="602" y="27" width="706" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1591284022983" />
-    <state width="1874" height="278" key="GridCell.Tab.0.bottom" timestamp="1591550202008">
+    <state width="1874" height="278" key="GridCell.Tab.0.bottom" timestamp="1591552624927">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="278" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1591550202008" />
-    <state width="1874" height="278" key="GridCell.Tab.0.center" timestamp="1591550202007">
+    <state width="1874" height="278" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1591552624927" />
+    <state width="1874" height="278" key="GridCell.Tab.0.center" timestamp="1591552624926">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="278" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1591550202007" />
-    <state width="1874" height="278" key="GridCell.Tab.0.left" timestamp="1591550202007">
+    <state width="1874" height="278" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1591552624926" />
+    <state width="1874" height="278" key="GridCell.Tab.0.left" timestamp="1591552624926">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="278" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1591550202007" />
-    <state width="1874" height="278" key="GridCell.Tab.0.right" timestamp="1591550202008">
+    <state width="1874" height="278" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1591552624926" />
+    <state width="1874" height="278" key="GridCell.Tab.0.right" timestamp="1591552624927">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="278" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1591550202008" />
+    <state width="1874" height="278" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1591552624927" />
     <state width="1874" height="344" key="GridCell.Tab.1.bottom" timestamp="1591286625472">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
