@@ -1,16 +1,14 @@
-package atm;
-
 import static org.junit.Assert.*;
 import org.junit.Test;
 import java.util.TreeSet;
 
-public class TestATM {
+public class TestCases {
 	@Test
 	public void testCard() {
 		Card c = new Card(12345);
 		assertEquals(12345, c.getNumber());
 	}
-	
+
 	@Test
 	public void testAccount() {
 		Account a = new Account("Manuel", 500.00);
@@ -34,7 +32,7 @@ public class TestATM {
 		w.setAmount(100.00);
 		assertEquals(100.0, w.getAmount(), 1e-10);		
 	}
-	
+
 	@Test
 	public void testCountable() {
 		ATM atm = new ATM(987, "Porto", "CGD");
@@ -57,7 +55,7 @@ public class TestATM {
 		w.setAmount(100.00);
 		assertEquals("Withdrawal at ATM 987 (Porto, CGD) of 100.00", "" + w);
 	}
-	
+
 	@Test
 	public void testSessionEquals() {
 		Session s = new Session(new ATM(987, "Porto", "CGD"));
