@@ -1,14 +1,13 @@
 import junit.framework.TestCase;
 import java.util.Arrays;
 
-public class FileSystemTest extends TestCase {
-
-	public void testCreateFileSystem() {
+public class TestCases extends TestCase {
+	public void testCreateFileSystem() throws DuplicateNameException {
 		FileSystem fs = new FileSystem("FAT32");
 		assertEquals("FAT32", fs.getType());		
 	}
 
-	public void testFileSystemRoot() {
+	public void testFileSystemRoot() throws DuplicateNameException {
 		FileSystem fs = new FileSystem("FAT32");
 		Folder root = fs.getRoot();
 		assertNull(root.getParent());
@@ -27,16 +26,17 @@ public class FileSystemTest extends TestCase {
 		assertSame(root, node2.getParent());
 		assertEquals("readme.txt", node2.getName());
 	}
-	
+
 	public void testFolderContents() throws DuplicateNameException {
 		FileSystem fs = new FileSystem("FAT32");
 		Folder root = fs.getRoot();		
 		Node node1 = new Folder(root, "bin");
 		Node node2 = new File(root, "readme.txt");
 		Node[] child = {node1, node2};
-		assertTrue(Arrays.equals(child, root.getChild()));
+		assertSame(node1, root.getChildByName("bin"));
+		assertSame(node2, root.getChildByName("readme.txt"));
 	}
-	
+
 	public void testGetChildByName() throws DuplicateNameException {
 		FileSystem fs = new FileSystem("FAT32");
 		Folder root = fs.getRoot();		
@@ -44,14 +44,14 @@ public class FileSystemTest extends TestCase {
 		assertSame(node1, root.getChildByName("bin"));
 		assertNull(root.getChildByName("bin2"));
 	}
-	
+
 	public void testDuplicateName() throws DuplicateNameException {
 		FileSystem fs = new FileSystem("FAT32");
 		Folder root = fs.getRoot();		
 		Node node1 = new Folder(root, "bin");
 		try {
 			Node node2 = new File(root, "bin");
-			fail("Devia ter lançado DuplicateNameException");
+			fail("Devia ter lanï¿½ado DuplicateNameException");
 		}
 		catch(DuplicateNameException e) {			
 		}
@@ -79,7 +79,7 @@ public class FileSystemTest extends TestCase {
 		assertEquals(200, file2.getSize());
 		assertEquals(300, root.getSize());
 	}
-	
+
 	public void testPathNameFormatter() throws DuplicateNameException {
 		NameFormatter dos = new DOSFormatter();
 		NameFormatter unix = new UnixFormatter();
@@ -106,20 +106,20 @@ public class FileSystemTest extends TestCase {
 		Folder cron = new Folder(etc, "cron");
 		File crontab = new File(cron, "crontab");
 		
-		// clone permite copiar um nó e todos os seus descendentes
+		// clone permite copiar um nï¿½ e todos os seus descendentes
 		Folder etc2 = etc.clone(root, "etc2"); // newParent, newName
 		assertSame(root, etc2.getParent());
 		assertEquals("etc2", etc2.getName());
 
-		// verifica que copiou também o filho
+		// verifica que copiou tambï¿½m o filho
 		Folder cron2 = (Folder)etc2.getChildByName("cron");
 		assertNotSame(cron, cron2); // pastas diferentes
-		assertEquals(cron, cron2); // mas com o mesmo conteúdo (nome, filhos) 
+		assertEquals(cron, cron2); // mas com o mesmo conteï¿½do (nome, filhos) 
 		
 		// ... e o neto
 		File crontab2 = (File)cron2.getChildByName("crontab");
 		assertNotSame(crontab, crontab2); // ficheiros diferentes
-		assertEquals(crontab, crontab2);  // mas com o mesmo conteúdo (nome, tamanho) 
+		assertEquals(crontab, crontab2);  // mas com o mesmo conteï¿½do (nome, tamanho) 
 	}
 	
 
@@ -132,20 +132,20 @@ public class FileSystemTest extends TestCase {
 		File crontab = new File(etc, "crontab");		
 		assertEquals("/etc/crontab", crontab.getPath());
 		
-		// "move" permite alterar o pai e/ou o nome de um nó
+		// "move" permite alterar o pai e/ou o nome de um nï¿½
 		crontab.move(cron, "crontab2"); //newParent, newName
 		assertEquals("/etc/cron/crontab2", crontab.getPath());
 		
-		// não se pode mover um nó para debaixo dele próprio ou de um descendente,
+		// nï¿½o se pode mover um nï¿½ para debaixo dele prï¿½prio ou de um descendente,
 		// pois criaria um ciclo
 		try {
 			etc.move(cron, "etc");
-			fail("Devia lançar CycleException");
+			fail("Devia lanï¿½ar CycleException");
 		}
 		catch(CycleException e) {			
 		}
 
-		// caso normal, só para verificar que recuperou bem da excepção anterior
+		// caso normal, sï¿½ para verificar que recuperou bem da excepï¿½ï¿½o anterior
 		cron.move(root, "cron");
 		assertEquals("/cron/crontab2", crontab.getPath());	
 	}
