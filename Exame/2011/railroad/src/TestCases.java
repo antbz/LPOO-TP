@@ -2,7 +2,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class RailRoadTests  {
+public class TestCases  {
 
 	@Test
 	public void testComboio() {
@@ -27,7 +27,7 @@ public class RailRoadTests  {
 		Carruagem a1 = new Carruagem(40);
 		assertEquals(40, a1.getNumLugares());
 	}		
-	
+
 	@Test
 	public void testAddCarruagem() {
 		Comboio train = new Comboio ("Regional");
@@ -50,7 +50,7 @@ public class RailRoadTests  {
 
 		assertEquals(n1 + n2, train.getNumLugares());
 	}
-	
+
 	@Test
 	public void testRemoveCarruagensPorCapacidade() {
 		Comboio train = new Comboio("Regional");
@@ -75,7 +75,7 @@ public class RailRoadTests  {
 		assertEquals(2, train.getNumCarruagens());
 		assertEquals(50, train.getNumLugares());
 	}
-	
+
 	@Test
 	public void testAddPassageiros() throws PassengerCapacityExceeded {
 		Comboio train = new Comboio("Regular");
@@ -115,7 +115,7 @@ public class RailRoadTests  {
 		train.removePassageiros(); // sem parametro remove todos		
 		assertEquals(0, train.getNumPassageiros());		
 	}
-	
+
 	@Test
 	public void testImprimeDadosDoComboio() throws PassengerCapacityExceeded {
 		Comboio c1 = new Comboio("Regional");
@@ -131,10 +131,9 @@ public class RailRoadTests  {
 		assertEquals("TGV Speeder, 1 carruagem, 1 lugar, 0 passageiros", c2.toString());
 	}
 
-	/**
-	 * Dois comboios sao considerados iguais se tiverem 
-	 * sequencias de carruagens com a mesma capacidade
-	 */
+
+	//Dois comboios sao considerados iguais se tiverem
+	//sequencias de carruagens com a mesma capacidade
 	@Test
 	public void testComboiosIguais() {
 		Comboio c1 = new Comboio("C1");
@@ -183,5 +182,4 @@ public class RailRoadTests  {
 		c1.setServicoABordo(new ServicoPrioritario());
 		assertEquals("Servico prioritario.",c1.getDescricaoServico());
 	}
-	
 }
