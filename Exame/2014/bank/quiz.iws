@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9b435420-c662-432d-9308-eb90bd7ac2cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ATM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Countable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Deposit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Session.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Withdrawal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/quiz/CollisionException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/quiz/CombinatorialCircuit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/quiz/CycleException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/quiz/GateAnd.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/quiz/GateNot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/quiz/GateOr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/quiz/LogicGate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/quiz/LogicVariable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/quiz/TestCases.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/quiz/TestCases.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz.iws" beforeDir="false" afterPath="$PROJECT_DIR$/quiz.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestCases.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../2015/building/quiz.iws" beforeDir="false" afterPath="$PROJECT_DIR$/../../2015/building/quiz.iws" afterDir="false" />
-    </list>
+    <list default="true" id="9b435420-c662-432d-9308-eb90bd7ac2cd" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -193,7 +172,7 @@
       <workItem from="1591283852499" duration="2766000" />
       <workItem from="1591546585619" duration="4215000" />
       <workItem from="1591554608968" duration="2828000" />
-      <workItem from="1591625805867" duration="957000" />
+      <workItem from="1591625805867" duration="1149000" />
     </task>
     <servers />
   </component>
@@ -209,22 +188,22 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="602" y="27" width="706" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1591284022983" />
-    <state width="1874" height="278" key="GridCell.Tab.0.bottom" timestamp="1591626674132">
+    <state width="1874" height="278" key="GridCell.Tab.0.bottom" timestamp="1591626955609">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="278" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1591626674132" />
-    <state width="1874" height="278" key="GridCell.Tab.0.center" timestamp="1591626674131">
+    <state width="1874" height="278" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1591626955609" />
+    <state width="1874" height="278" key="GridCell.Tab.0.center" timestamp="1591626955609">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="278" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1591626674131" />
-    <state width="1874" height="278" key="GridCell.Tab.0.left" timestamp="1591626674131">
+    <state width="1874" height="278" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1591626955609" />
+    <state width="1874" height="278" key="GridCell.Tab.0.left" timestamp="1591626955609">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="278" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1591626674131" />
-    <state width="1874" height="278" key="GridCell.Tab.0.right" timestamp="1591626674131">
+    <state width="1874" height="278" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1591626955609" />
+    <state width="1874" height="278" key="GridCell.Tab.0.right" timestamp="1591626955609">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1874" height="278" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1591626674131" />
+    <state width="1874" height="278" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1591626955609" />
     <state width="1874" height="344" key="GridCell.Tab.1.bottom" timestamp="1591286625472">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

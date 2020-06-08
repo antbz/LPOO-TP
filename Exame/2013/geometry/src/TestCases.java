@@ -1,10 +1,8 @@
-package geometria;
-
 import static org.junit.Assert.*;
 import org.junit.Test;
 import java.util.TreeSet;
 
-public class TestGeometria {
+public class TestCases {
 
 	@Test
 	public void testPonto() {
@@ -20,25 +18,25 @@ public class TestGeometria {
 		assertEquals(3, c.getRaio());
 		assertEquals(p, c.getCentro());
 	}
-	
+
 	@Test(expected = IllegalArgumentException.class)
 	public void testExcepcoes() {
 		new Circulo(new Ponto(1, 5), -1);
 	}
-	
+
 	@Test
 	public void testFigura() {
 		Figura f = new Circulo(new Ponto(0,0), 5);
 		assertEquals(Math.PI * 5 * 5, f.getArea(), 1E-10);		
 	}
-	
+
 	@Test
 	public void testRectangulo() {
 		int x1 = 1, x2 = 2, y1 = 1, y2 = 2;
 		Figura f = new Rectangulo(x1, y1, x2, y2);
 		assertEquals(4.0, f.getPerimetro(), 1E-10);		
 	}
-	
+
 	@Test
 	public void testFiguraComposta() {
 		Circulo c = new Circulo(new Ponto(2, 2), 1);
@@ -46,10 +44,10 @@ public class TestGeometria {
 		Figura[] figuras = new Figura[] {c, r};
 		Figura figuraComposta = new FiguraComposta(figuras);
 		assertEquals(1 + Math.PI, figuraComposta.getArea(), 1E-10);
-		// nota: não analisar sobreposições
+		// nota: nï¿½o analisar sobreposiï¿½ï¿½es
 	}
 
-	
+
 
 	@Test
 	public void testCountable() {
@@ -78,7 +76,7 @@ public class TestGeometria {
 
 	@Test
 	public void testOrdenacaoPontos() {
-		// Pontos são ordenadas por valores crescentes de x 
+		// Pontos sï¿½o ordenadas por valores crescentes de x 
 		// e depois y 
 		Ponto p1 = new Ponto(0, 0);
 		Ponto p2 = new Ponto(0, 1);
@@ -90,5 +88,5 @@ public class TestGeometria {
 		assertSame(p1, pontos.toArray()[0]);
 		assertSame(p2, pontos.toArray()[1]);
 		assertSame(p3, pontos.toArray()[2]);
-	}	
+	}
 }
